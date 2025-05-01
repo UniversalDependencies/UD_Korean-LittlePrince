@@ -1,13 +1,11 @@
 # Summary
 
-... 1-2 sentences (see [release checklist](http://universaldependencies.org/release_checklist.html#the-readme-file) for README guidelines) ...
-
-UD Korean-LittlePrince is a UD adaptation of the k-SNACS dataset 
+UD Korean-LittlePrince is a UD adaptation of the k-SNACS dataset
 [(Hwang et al. 2020)](https://aclanthology.org/2020.dmr-1.6/).
 
 # Introduction
 
-UD Korean-LittlePrince is a UD adaptation of the k-SNACS dataset 
+UD Korean-LittlePrince is a UD adaptation of the k-SNACS dataset
 [(Hwang et al. 2020)](https://aclanthology.org/2020.dmr-1.6/),
 a Korean version of the wider SNACS effort [(Schneider et al. 2018)](https://aclanthology.org/P18-1018/)
 that annotates case and adposition supersense.
@@ -23,7 +21,7 @@ and manually adjusted to satisfy UD validation.
 
 # Tokens
 
-# 
+#
 
 # Acknowledgments
 
@@ -47,7 +45,7 @@ When using this data, please cite the following as appropriate:
 
 Original k-SNACS annotations
 [Hwang et al., 2020](https://www.aclweb.org/anthology/2020.dmr-1.6/):
-> Hwang, Jena D., Hanwool Choe, Na-Rae Han, and Nathan Schneider. "K-SNACS: Annotating Korean adposition semantics." In Proceedings of the Second International Workshop on Designing Meaning Representations. 2020. 
+> Hwang, Jena D., Hanwool Choe, Na-Rae Han, and Nathan Schneider. "K-SNACS: Annotating Korean adposition semantics." In Proceedings of the Second International Workshop on Designing Meaning Representations. 2020.
 
 Universal Dependencies adaptation
 [Min et al., 2025](https://github.com/UniversalDependencies/UD_Korean-LittlePrince):
