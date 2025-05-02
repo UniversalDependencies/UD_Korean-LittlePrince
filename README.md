@@ -68,7 +68,7 @@ UPOS: manual native
 XPOS: automatic
 Features: automatic
 Relations: manual native
-Contributors: Min, Junghyun; Hwang, Jena D.; Schneider, Nathan
+Contributors: Min, Junghyun; Hwang, Jena; Schneider, Nathan
 Contributing: here
 Contact: jm3743@georgetown.edu
 ===============================================================================
