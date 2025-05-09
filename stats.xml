@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>1551</sentences><tokens>13656</tokens><words>13656</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>1551</sentences><tokens>13656</tokens><words>13656</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="1663" /><!-- ., ", 나, 그, 것, 어리, 왕자, 하, ,, 말하, ?, 있, ......, !, 별 -->
+  <forms unique="4512" /><!-- ., ", 어린, ,, ?, 나는, 그, ......, !, 말했다, 그는, 왕자가, 내, 한, 왕자는 -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="15">
+    <tag name="ADJ">766</tag><!-- 어리, 있, 없, _, 다르, 아니, 같, 작, 좋, 많 -->
+    <tag name="ADP">38</tag><!-- _, 나, 그리고, 너, 오 -->
+    <tag name="ADV">1651</tag><!-- _, 그, 것, 나, 별, 속, 어디, 때문, 위, 꽃 -->
+    <tag name="AUX">375</tag><!-- _ -->
+    <tag name="CCONJ">499</tag><!-- _, 하, 보, 있, 가지, 그리고, 바라보, 별, 없, 나 -->
+    <tag name="DET">247</tag><!-- _ -->
+    <tag name="INTJ">18</tag><!-- _, 그렇 -->
+    <tag name="NOUN">2731</tag><!-- _, 왕자, 것, 사람, 별, 꽃, 말, 왕, 양, 일 -->
+    <tag name="NUM">195</tag><!-- _, 하나, 1, 호, 다섯, 둘, 만, 번째, 의, 2 -->
+    <tag name="PART">1</tag><!-- _ -->
+    <tag name="PRON">871</tag><!-- 그, 나, _, 내, 너, 그거, 그것, 네, 여러분, 우리 -->
+    <tag name="PROPN">28</tag><!-- _, 프랑스, 게으름뱅이, 남아메리카, 두레박, 드디어, 북아메리카, 시베리아, 아리조나, 오스트레일리아 -->
+    <tag name="PUNCT">2922</tag><!-- ., ", ,, ?, ......, !, ', ....., <, > -->
+    <tag name="SCONJ">571</tag><!-- 이렇, 하, 그렇, 있, 되, 보, 대하, 없, 아니, 어떻 -->
+    <tag name="VERB">2743</tag><!-- 말하, 하, 되, 것, 알, 보, 주, 거, 보이, 대답 -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="10">
+    <feat name="Case" value="Acc" upos="AUX,NOUN,PRON,PROPN">776</feat><!-- 말을, 나를, 것을, 걸, 별을, 꽃을, 그를, 그림을, 양을, 별들을 -->
+    <feat name="Case" value="Gen" upos="NOUN,PRON,PROPN">208</feat><!-- 그의, 나의, 너의, 개의, 왕자의, 바오밥나무의, 보아뱀의, 별의, 짐의, 사람들의 -->
+    <feat name="Case" value="Nom" upos="NOUN,PRON,PROPN">1755</feat><!-- 나는, 그는, 왕자가, 왕자는, 내가, 그가, 난, 그건, 사람이, 꽃은 -->
+    <feat name="ExtPos" value="AUX" upos="NOUN">105</feat><!-- 수, 수가, 것, 수도, 수는, 뿐, 수만 -->
+    <feat name="Mood" value="Imp" upos="VERB">83</feat><!-- 말라, 하라, 것이라고, 까닭이니라, 다스리노라, 명하노라, 무어라, 뭐라고, 보라고, 일이니라 -->
+    <feat name="Mood" value="Ind" upos="VERB">665</feat><!-- 말했다, 것이다, 물었다, 대답했다, 것이었다, 했다, 생각했다, 이었다, 되었다, 바라보았다 -->
+    <feat name="Tense" value="Fut" upos="VERB">229</feat><!-- 알, 될, 할, 될거야, 볼, 이해할, 그럴, 모를, 둘, 못할 -->
+    <feat name="Tense" value="Past" upos="VERB">34</feat><!-- 나타났다, 났다, 냈다, 떠났다, 만났을, 일어섰다, 가져갔다, 갔다, 걸어갔다, 꺼냈다 -->
+    <feat name="VerbForm" value="Fin" upos="VERB">748</feat><!-- 말했다, 것이다, 물었다, 대답했다, 것이었다, 했다, 생각했다, 이었다, 되었다, 바라보았다 -->
+    <feat name="VerbForm" value="Ger" upos="VERB">1</feat><!-- 한아름 -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="32">
+    <dep name="acl">515</dep>
+    <dep name="advcl">587</dep>
+    <dep name="advmod">814</dep>
+    <dep name="amod">653</dep>
+    <dep name="aux">372</dep>
+    <dep name="case">39</dep>
+    <dep name="cc">257</dep>
+    <dep name="ccomp">625</dep>
+    <dep name="compound">676</dep>
+    <dep name="compound:lvc">11</dep>
+    <dep name="conj">402</dep>
+    <dep name="cop">2</dep>
+    <dep name="csubj">26</dep>
+    <dep name="dep">129</dep>
+    <dep name="det">242</dep>
+    <dep name="discourse">13</dep>
+    <dep name="dislocated">934</dep>
+    <dep name="fixed">105</dep>
+    <dep name="flat">2</dep>
+    <dep name="iobj">76</dep>
+    <dep name="mark">27</dep>
+    <dep name="nmod">252</dep>
+    <dep name="nsubj">780</dep>
+    <dep name="nummod">152</dep>
+    <dep name="obj">789</dep>
+    <dep name="obl">486</dep>
+    <dep name="parataxis">11</dep>
+    <dep name="punct">2922</dep>
+    <dep name="reparandum">2</dep>
+    <dep name="root">1551</dep>
+    <dep name="vocative">11</dep>
+    <dep name="xcomp">193</dep>
+  </deps>
+</treebank>
