@@ -62,6 +62,7 @@ Universal Dependencies adaptation
 Data available since: UD v2.16
 License: CC BY-SA 4.0
 Includes text: yes
+Parallel: no
 Genre: fiction
 Lemmas: automatic
 UPOS: manual native
