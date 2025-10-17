@@ -64,10 +64,10 @@ License: CC BY-SA 4.0
 Includes text: yes
 Genre: fiction
 Lemmas: automatic
-UPOS: manual native
+UPOS: automatic
 XPOS: automatic
 Features: automatic
-Relations: manual native
+Relations: automatic
 Contributors: Min, Junghyun; Hwang, Jena; Schneider, Nathan
 Contributing: here
 Contact: jm3743@georgetown.edu
