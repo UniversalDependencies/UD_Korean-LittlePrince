@@ -1,11 +1,15 @@
 Running the following version of UD tools:
-commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
+commit 26e6c87a2f518322d15901a351199b6be6569062
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 9 21:07:42 2025 +0200
+Date:   Fri Nov 7 15:39:58 2025 +0100
 Evaluating the following revision of UD_Korean-LittlePrince:
-commit 0581f86fc189ad72899d6a0624ef95ace18599b6
+commit 0b79c9dbca0afef9b4cb1deb10c80383049a516e
+Merge: e1289a1 7696b24
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 9 22:18:18 2025 +0200
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'ko_littleprince'
+Language code (from CoNLL-U file name) = 'ko'
+Found the following data files: ko_littleprince-ud-test.conllu
 Size: counted 13656 of 13656 words (nodes).
 Size: min(0, log((N/1000)**2)) = 5.22835797098428.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -14,27 +18,39 @@ Split: Did not find at least 10000 development words.
 Split: Found at least 10000 test words.
 Lemmas: '_' is the most frequent lemma.
 Universal POS tags: 15 out of 17 found in the corpus.
-Universal POS tags: source of annotation (from README) factor is 1.
+Universal POS tags: source of annotation (from README) factor is 0.1.
 Features: 3808 out of 13656 total words have one or more features.
 Features: source of annotation (from README) factor is 0.4.
 Universal relations: 31 out of 37 found in the corpus.
-Universal relations: source of annotation (from README) factor is 1.
-Udapi:
-               TOTAL       3311
-Udapi: found 3311 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 13656 words.
+Universal relations: source of annotation (from README) factor is 0.1.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang ko --max-err=10 UD_Korean-LittlePrince/ko_littleprince-ud-test.conllu
-*** PASSED ***
-Validity: 1
-(weight=0.0769230769230769) * (score{features}=0.12) = 0.00923076923076923
-(weight=0.0769230769230769) * (score{genres}=0.0555555555555556) = 0.00427350427350427
-(weight=0.0769230769230769) * (score{lemmas}=0.01) = 0.000769230769230769
-(weight=0.256410256410256) * (score{size}=0.378441169368892) = 0.097036197274075
-(weight=0.0512820512820513) * (score{split}=0.34) = 0.0174358974358974
-(weight=0.0769230769230769) * (score{tags}=0.882352941176471) = 0.0678733031674208
-(weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
-(weight=0.0769230769230769) * (score{udeprels}=0.837837837837838) = 0.0644490644490645
-(TOTAL score=0.264144889676885) * (availability=1) * (validity=1) = 0.264144889676885
-STARS = 1.5
-UD_Korean-LittlePrince	0.264144889676885	1.5
+[Line 3 Sent lpp.ko01-001]: [L3 Warning pron-det-without-prontype] The word '내 .nae' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 29 Sent lpp.ko01-002]: [L3 Warning pron-det-without-prontype] The word '그것은 .geu.geos.eun' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 44 Sent lpp.ko01-003]: [L3 Warning pron-det-without-prontype] The word '그걸 .geu.geol' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 57 Sent lpp.ko01-004]: [L3 Warning pron-det-without-prontype] The word '그 .geu' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 60 Sent lpp.ko01-004]: [L3 Warning pron-det-without-prontype] The word '이런 .i.reon' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 81 Sent lpp.ko01-006]: [L3 Warning pron-det-without-prontype] The word '그런 .geu.reon' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 105 Sent lpp.ko01-007]: [L3 Warning pron-det-without-prontype] The word '나는 .na.neun' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 107 Sent lpp.ko01-007]: [L3 Warning pron-det-without-prontype] The word '그 .geu' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 129 Sent lpp.ko01-007]: [L3 Warning pron-det-without-prontype] The word '나의 .na.yi' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 141 Sent lpp.ko01-008]: [L3 Warning pron-det-without-prontype] The word '나의 .na.yi' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further errors regarding Warning
+[Line 576 Sent lpp.ko01-032]: [L3 Syntax too-many-objects] Multiple direct objects [11, 13] ('이야기 .i.ya.gi', '넥타이이야기를 .neg.ta.i.i.ya.gi.reul') under the predicate '했다 .haess.da'.
+[Line 7956 Sent lpp.ko10-046]: [L3 Syntax too-many-objects] Multiple direct objects [3, 5] ('명하노니 .myeong.ha.no.ni', '질문을 .jil.mun.eul') under the predicate '하라 .ha.ra'.
+[Line 16235 Sent lpp.ko21-100]: [L3 Syntax too-many-objects] Multiple direct objects [6, 8] ('마음을 .ma.eum.eul', '단장을 .dan.jang.eul') under the predicate '해야 .hae.ya'.
+Syntax errors: 3
+Warnings: 1126
+*** FAILED *** with 3 errors
+Exit code: 1
+Validity: 0.01
+(weight=0.111111111111111) * (score{features}=0.12) = 0.0133333333333333
+(weight=0.111111111111111) * (score{genres}=0.0555555555555556) = 0.00617283950617284
+(weight=0.111111111111111) * (score{lemmas}=0.01) = 0.00111111111111111
+(weight=0.37037037037037) * (score{size}=0.378441169368892) = 0.140163396062553
+(weight=0.0740740740740741) * (score{split}=0.34) = 0.0251851851851852
+(weight=0.111111111111111) * (score{tags}=0.0882352941176471) = 0.00980392156862745
+(weight=0.111111111111111) * (score{udeprels}=0.0837837837837838) = 0.00930930930930931
+(TOTAL score=0.205079096076292) * (availability=1) * (validity=0.01) = 0.00205079096076292
+STARS = 0
+UD_Korean-LittlePrince	0.00205079096076292	0
