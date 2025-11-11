@@ -62,12 +62,13 @@ Universal Dependencies adaptation
 Data available since: UD v2.16
 License: CC BY-SA 4.0
 Includes text: yes
+Parallel: no
 Genre: fiction
 Lemmas: automatic
-UPOS: manual native
+UPOS: automatic
 XPOS: automatic
 Features: automatic
-Relations: manual native
+Relations: automatic
 Contributors: Min, Junghyun; Hwang, Jena; Schneider, Nathan
 Contributing: here
 Contact: jm3743@georgetown.edu
