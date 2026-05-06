@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Korean-LittlePrince:
-commit 0b79c9dbca0afef9b4cb1deb10c80383049a516e
-Merge: e1289a1 7696b24
+commit 377cad87c9a133a9459bcf788298e5e81290db40
+Merge: e822bdb ab386c1
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'ko_littleprince'
@@ -25,23 +25,27 @@ Universal relations: 31 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.1.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang ko --max-err=10 UD_Korean-LittlePrince/ko_littleprince-ud-test.conllu
-[Line 3 Sent lpp.ko01-001]: [L3 Warning pron-det-without-prontype] The word '내 .nae' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 29 Sent lpp.ko01-002]: [L3 Warning pron-det-without-prontype] The word '그것은 .geu.geos.eun' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 44 Sent lpp.ko01-003]: [L3 Warning pron-det-without-prontype] The word '그걸 .geu.geol' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 57 Sent lpp.ko01-004]: [L3 Warning pron-det-without-prontype] The word '그 .geu' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 60 Sent lpp.ko01-004]: [L3 Warning pron-det-without-prontype] The word '이런 .i.reon' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 81 Sent lpp.ko01-006]: [L3 Warning pron-det-without-prontype] The word '그런 .geu.reon' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 105 Sent lpp.ko01-007]: [L3 Warning pron-det-without-prontype] The word '나는 .na.neun' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 107 Sent lpp.ko01-007]: [L3 Warning pron-det-without-prontype] The word '그 .geu' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 129 Sent lpp.ko01-007]: [L3 Warning pron-det-without-prontype] The word '나의 .na.yi' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 141 Sent lpp.ko01-008]: [L3 Warning pron-det-without-prontype] The word '나의 .na.yi' is tagged 'PRON' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-[Line 576 Sent lpp.ko01-032]: [L3 Syntax too-many-objects] Multiple direct objects [11, 13] ('이야기 .i.ya.gi', '넥타이이야기를 .neg.ta.i.i.ya.gi.reul') under the predicate '했다 .haess.da'.
-[Line 7956 Sent lpp.ko10-046]: [L3 Syntax too-many-objects] Multiple direct objects [3, 5] ('명하노니 .myeong.ha.no.ni', '질문을 .jil.mun.eul') under the predicate '하라 .ha.ra'.
-[Line 16235 Sent lpp.ko21-100]: [L3 Syntax too-many-objects] Multiple direct objects [6, 8] ('마음을 .ma.eum.eul', '단장을 .dan.jang.eul') under the predicate '해야 .hae.ya'.
-Syntax errors: 3
-Warnings: 1126
-*** FAILED *** with 3 errors
+[Line 3 Sent lpp.ko01-001]: [L3 WARNING pron-det-without-prontype] The word '내 .nae' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 29 Sent lpp.ko01-002]: [L3 WARNING pron-det-without-prontype] The word '그것은 .geu.geos.eun' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 44 Sent lpp.ko01-003]: [L3 WARNING pron-det-without-prontype] The word '그걸 .geu.geol' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 57 Sent lpp.ko01-004]: [L3 WARNING pron-det-without-prontype] The word '그 .geu' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 60 Sent lpp.ko01-004]: [L3 WARNING pron-det-without-prontype] The word '이런 .i.reon' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 81 Sent lpp.ko01-006]: [L3 WARNING pron-det-without-prontype] The word '그런 .geu.reon' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 105 Sent lpp.ko01-007]: [L3 WARNING pron-det-without-prontype] The word '나는 .na.neun' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 107 Sent lpp.ko01-007]: [L3 WARNING pron-det-without-prontype] The word '그 .geu' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 129 Sent lpp.ko01-007]: [L3 WARNING pron-det-without-prontype] The word '나의 .na.yi' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 141 Sent lpp.ko01-008]: [L3 WARNING pron-det-without-prontype] The word '나의 .na.yi' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 865 Sent lpp.ko02-019]: [L3 SYNTAX obl-should-be-nmod] The parent (node [6] '나는 .na.neun') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 6404 Sent lpp.ko08-047]: [L3 SYNTAX obl-should-be-nmod] The parent (node [7] '있을리가 .iss.eul.ri.ga') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 9759 Sent lpp.ko13-001]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] '별은 .byeol.eun') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 10994 Sent lpp.ko14-001]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] '별은 .byeol.eun') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 13177 Sent lpp.ko16-001]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] '별은 .byeol.eun') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 17282 Sent lpp.ko22-014]: [L3 SYNTAX obl-should-be-nmod] The parent (node [6] '불을 .bul.eul') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 21071 Sent lpp.ko26-082]: [L3 SYNTAX obl-should-be-nmod] The parent (node [11] '친구들은 .chin.gu.deul.eun') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+Warnings: 1118
+SYNTAX errors: 7
+*** FAILED *** with 7 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.111111111111111) * (score{features}=0.12) = 0.0133333333333333
