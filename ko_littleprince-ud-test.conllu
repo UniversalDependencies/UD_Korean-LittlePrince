@@ -566,12 +566,12 @@
 5	수	_	NOUN	nbn	ExtPos=AUX	4	obl	4:obl	Translit=.su
 6	있는	있	ADJ	paa+etm	_	5	fixed	5:fixed	LTranslit=.iss|MSeg=있-는|Translit=.iss.neun
 7	트럼프	_	NOUN	ncn	_	8	compound	8:compound	Translit=.teu.reom.peu
-8	이야기	_	NOUN	ncn	_	13	compound	13:compound	SpaceAfter=No|Translit=.i.ya.gi
+8	이야기	_	NOUN	ncn	_	14	obj	14:obj	SpaceAfter=No|Translit=.i.ya.gi
 9	,	,	PUNCT	sp	_	8	punct	8:punct	_
 10	골프	_	NOUN	ncn	_	11	compound	11:compound	Translit=.gol.peu
-11	이야기	_	NOUN	ncn	_	14	obj	14:obj	SpaceAfter=No|Translit=.i.ya.gi
+11	이야기	_	NOUN	ncn	_	8	conj	8:conj	SpaceAfter=No|Translit=.i.ya.gi
 12	,	,	PUNCT	sp	_	11	punct	11:punct	_
-13	넥타이이야기를	넥타이	NOUN	ncn+jco	Case=Acc	14	obj	14:obj	LTranslit=.neg.ta.i|MSeg=넥타이-이-야기-를|Translit=.neg.ta.i.i.ya.gi.reul
+13	넥타이이야기를	넥타이	NOUN	ncn+jco	Case=Acc	8	conj	8:conj	LTranslit=.neg.ta.i|MSeg=넥타이-이-야기-를|Translit=.neg.ta.i.i.ya.gi.reul
 13.1	를	_	ADP	jco	_	_	_	13:case	Adp=를|Funct=theme|Scene=theme|Translit=.reul
 14	했다	하	VERB	pvg+ep+ef	Mood=Ind|VerbForm=Fin	0	root	0:root	LTranslit=.ha|MSeg=하-었-다|SpaceAfter=No|Translit=.haess.da
 15	.	.	PUNCT	sf	_	14	punct	14:punct	SpaceAfter=No
@@ -7947,9 +7947,9 @@
 # sent_id = lpp.ko10-046
 # text = "네게 명하노니, 질문을 하라. "
 1	"	"	PUNCT	sl	_	6	punct	6:punct	SpaceAfter=No
-2	네게	네	ADV	npp+jca	_	6	iobj	6:iobj	LTranslit=.ne|MSeg=네-게|Translit=.ne.ge
+2	네게	네	ADV	npp+jca	_	3	iobj	3:iobj	LTranslit=.ne|MSeg=네-게|Translit=.ne.ge
 2.1	에게	_	ADP	jca	_	_	_	2:case	Adp=에게|Funct=goal|Scene=recipient|Translit=.e.ge
-3	명하노니	_	NOUN	ncn	_	6	obj	6:obj	SpaceAfter=No|Translit=.myeong.ha.no.ni
+3	명하노니	명하	SCONJ	pvg+ecs	_	6	advcl	6:advcl	SpaceAfter=No|Translit=.myeong.ha.no.ni
 4	,	,	PUNCT	sp	_	5	punct	5:punct	_
 5	질문을	질문	NOUN	ncpa+jco	Case=Acc	6	obj	6:obj	LTranslit=.jil.mun|MSeg=질문-을|Translit=.jil.mun.eul
 5.1	을	_	ADP	jco	_	_	_	5:case	Adp=을|Funct=theme|Scene=theme|Translit=.eul
@@ -16230,7 +16230,7 @@
 6	마음을	마음	NOUN	ncn+jco	Case=Acc	9	obj	9:obj	LTranslit=.ma.eum|MSeg=마음-을|Translit=.ma.eum.eul
 6.1	을	_	ADP	jco	_	_	_	6:case	Adp=을|Funct=theme|Scene=theme|Translit=.eul
 7	곱게	곱	SCONJ	paa+ecs	_	9	xcomp	9:xcomp	LTranslit=.gob|MSeg=곱-게|Translit=.gob.ge
-8	단장을	단장	NOUN	ncn+jco	Case=Acc	9	obj	9:obj	LTranslit=.dan.jang|MSeg=단장-을|Translit=.dan.jang.eul
+8	단장을	단장	NOUN	ncn+jco	Case=Acc	9	xcomp	9:xcomp	LTranslit=.dan.jang|MSeg=단장-을|Translit=.dan.jang.eul
 8.1	을	_	ADP	jco	_	_	_	8:case	Adp=을|Funct=theme|Scene=theme|Translit=.eul
 9	해야	하	VERB	pvg+ecx	_	11	ccomp	11:ccomp	LTranslit=.ha|MSeg=하-어야|Translit=.hae.ya
 10	하는지	하	NOUN	px+ef	_	11	ccomp	11:ccomp	LTranslit=.ha|MSeg=하-는지|Translit=.ha.neun.ji

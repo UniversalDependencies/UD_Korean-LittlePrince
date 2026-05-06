@@ -22,13 +22,13 @@
     <tag name="CCONJ">499</tag><!-- _, 하, 보, 있, 가지, 그리고, 바라보, 별, 없, 나 -->
     <tag name="DET">247</tag><!-- _ -->
     <tag name="INTJ">18</tag><!-- _, 그렇 -->
-    <tag name="NOUN">2731</tag><!-- _, 왕자, 것, 사람, 별, 꽃, 말, 왕, 양, 일 -->
+    <tag name="NOUN">2730</tag><!-- _, 왕자, 것, 사람, 별, 꽃, 말, 왕, 양, 일 -->
     <tag name="NUM">195</tag><!-- _, 하나, 1, 호, 다섯, 둘, 만, 번째, 의, 2 -->
     <tag name="PART">1</tag><!-- _ -->
     <tag name="PRON">871</tag><!-- 그, 나, _, 내, 너, 그거, 그것, 네, 여러분, 우리 -->
     <tag name="PROPN">28</tag><!-- _, 프랑스, 게으름뱅이, 남아메리카, 두레박, 드디어, 북아메리카, 시베리아, 아리조나, 오스트레일리아 -->
     <tag name="PUNCT">2922</tag><!-- ., ", ,, ?, ......, !, ', ....., <, > -->
-    <tag name="SCONJ">571</tag><!-- 이렇, 하, 그렇, 있, 되, 보, 대하, 없, 아니, 어떻 -->
+    <tag name="SCONJ">572</tag><!-- 이렇, 하, 그렇, 있, 되, 보, 대하, 없, 아니, 어떻 -->
     <tag name="VERB">2743</tag><!-- 말하, 하, 되, 것, 알, 보, 주, 거, 보이, 대답 -->
   </tags>
   <!-- Statistics of features and values. The comments show the most frequent word forms. -->
@@ -47,16 +47,16 @@
   <!-- Statistics of universal dependency relations. -->
   <deps unique="32">
     <dep name="acl">515</dep>
-    <dep name="advcl">587</dep>
+    <dep name="advcl">588</dep>
     <dep name="advmod">814</dep>
     <dep name="amod">653</dep>
     <dep name="aux">372</dep>
     <dep name="case">39</dep>
     <dep name="cc">257</dep>
     <dep name="ccomp">625</dep>
-    <dep name="compound">676</dep>
+    <dep name="compound">675</dep>
     <dep name="compound:lvc">11</dep>
-    <dep name="conj">402</dep>
+    <dep name="conj">404</dep>
     <dep name="cop">2</dep>
     <dep name="csubj">26</dep>
     <dep name="dep">129</dep>
@@ -70,13 +70,13 @@
     <dep name="nmod">252</dep>
     <dep name="nsubj">780</dep>
     <dep name="nummod">152</dep>
-    <dep name="obj">789</dep>
+    <dep name="obj">786</dep>
     <dep name="obl">486</dep>
     <dep name="parataxis">11</dep>
     <dep name="punct">2922</dep>
     <dep name="reparandum">2</dep>
     <dep name="root">1551</dep>
     <dep name="vocative">11</dep>
-    <dep name="xcomp">193</dep>
+    <dep name="xcomp">194</dep>
   </deps>
 </treebank>
